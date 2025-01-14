@@ -1,0 +1,31 @@
+---
+title: "Reproducible document"
+author: "Stine Jorstad Bugge"
+format: html
+---
+
+## Basics of R
+
+```{r}
+1 + 1
+```
+
+## Setup code chunk
+
+```{r setup}
+library(tidyverse)
+```
+
+## About me
+- Stine Jorstad Bugge
+- Steno Diabetes Center Odense
+- Farmakologi, Odense Universitetshospital
+- Syddansk Universitet
+
+As a doctor I care for patients and want to help them navigate their disease, treatment and care. Therefore I work with an *intervention* aiming to bring doctors together to improve coordination and care for patients with **multimorbidity and diabetes**.
+
+## Simple code
+```{r}
+3 * 3
+```
+
