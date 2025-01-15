@@ -125,8 +125,8 @@ ggplot(post_meal_data, aes(x = glykemi)) +
 ```{r}
 #| fig-cap: "Scatterplot showing BMI against AUC of blood glucose"
 #| label: fig-bmi-auc-pg
-ggplot(post_meal_data, aes(x = BMI, y = auc_pg)) + 
-  geom_point() + 
+ggplot(post_meal_data, aes(x = BMI, y = auc_pg)) +
+  geom_point() +
   geom_smooth()
 ```
 
@@ -150,3 +150,12 @@ select(post_meal_data, ends_with("DXA"))
 select(post_meal_data, contains("0"))
 ```
 
+## Renaming specific columns
+
+```{r}
+small_post_meal_data |>
+  rename(auc_glucose = auc_pg)
+
+small_post_meal_data |>
+  rename(auc_glucose = auc_pg, auc_insulin = auc_ins)
+```
