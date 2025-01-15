@@ -28,6 +28,31 @@ post_meal_data
 glimpse(post_meal_data)
 ```
 
+```{r}
+ggplot(post_meal_data, aes(x = BMI)) + 
+  geom_histogram()
+```
+## Distribution of BMI
+
+```{r}
+#| fig-cap: "Distribution of BMI"
+#| label: fig-bmi-histo
+ggplot(post_meal_data, aes(x = BMI)) + 
+  geom_histogram()
+```
+
+@fig-bmi-histo
+
+## Exercise: discrete plots
+
+```{r}
+#| fig-cap: "Glykemi"
+#| label: fig-glykemi-bar
+ggplot(post_meal_data, aes(x = glykemi)) +
+  geom_bar()
+```
+
+See @fig-glykemi-bar above for a cool plot!
 
 
 ## About me
